@@ -13,7 +13,7 @@ export class CommentList extends Component {
 
   render() {
     let commentNodes = this.props.data.map(function (comment, index) {
-      return <div key={index}>{comment.comment}</div>;
+      return <li key={index}>{comment.comment}</li>;
     });
 
     return (
@@ -78,15 +78,15 @@ export class App extends Component {
       <div className="commentBox">
         <CommentList data={this.state.data} />
         <ReactPaginate
-          previousLabel={'previous'}
+          previousLabel={'previsfdsfsdfous'}
           nextLabel={'next'}
-          breakLabel={'...'}
+          breakLabel={'gfdgdfgsd'}
           breakClassName={'break-me'}
           pageCount={this.state.pageCount}
           marginPagesDisplayed={2}
           pageRangeDisplayed={5}
           onPageChange={this.handlePageClick}
-          containerClassName={'pagination'}
+          containerClassName={'paginarfgfgstion'}
           subContainerClassName={'pages pagination'}
           activeClassName={'active'}
         />
